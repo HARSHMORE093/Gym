@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Fitness</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+<style>
+    /* css reset */
+    
+    body {
+        font-family: 'Balsamiq Sans', cursive;
+        color: aliceblue;
+        margin: 0px;
+        padding: 0px;
+        background: url("image/abs-1850926.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    .left {
+        border: 2px solid #ff000000;
+        display: inline-block;
+        position: absolute;
+        left: 3px;
+        top: 5px;
+    }
+    
+    .left img {
+        width: 119px;
+        filter: invert(10%);
+    }
+    
+    .left div {
+        line-height: 22px;
+        font-size: 21px;
+        text-align: center;
+    }
+    
+    .mid {
+        /*  display width margin se centre me ho gata hai*/
+        border: 2px solid #ff000000;
+        display: block;
+        width: 61%;
+        margin: 13px auto;
+    }
+    
+    .right {
+        border: 2px solid #ff000000;
+        position: absolute;
+        right: -3px;
+        top: 12px;
+        display: inline-block;
+    }
+    
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+    
+    .navbar li a {
+        color: aliceblue;
+        text-decoration: none;
+        padding: 11px 55px;
+    }
+    
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: rgb(215, 215, 216);
+    }
+    
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(215, 215, 216);
+    }
+    
+    .btn {
+        font-family: 'Balsamiq Sans', cursive;
+        margin: 5px 5px;
+        background-color: black;
+        color: aliceblue;
+        padding: 5px 13px;
+        border: 2px solid grey;
+        border-radius: 17px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        background-color: grey;
+    }
+    
+    .container {
+        border: 2px solid white;
+        padding: 26px 49px 58px 39px;
+        margin: 140px 852px;
+        width: 33%;
+        border-radius: 10%;
+    }
+    
+    .form-group input {
+        font-family: 'Balsamiq Sans', cursive;
+        text-align: center;
+        display: block;
+        width: 42%;
+        padding: 5px;
+        border: 2px solid black;
+        margin: 5px auto;
+        font-size: 19px;
+        border-radius: 13px;
+    }
+    
+    .container h1 {
+        text-align: center;
+    }
+    
+    .container button {
+        display: block;
+        /* isse centre me ho gate hai*/
+        width: 23%;
+        margin: auto;
+    }
+</style>
+
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="image/logo.png">
+            <div>Fitness Gym</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculater</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Search</button>
+            <button class="btn">Call Us / Email Us</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join the best gym in Ujjain</h1>
+        <form action="noaction">
+            <div class="form-group">
+                <input class="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input class="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input class="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input class="text" name="" placeholder="Enter your Phone no.">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
